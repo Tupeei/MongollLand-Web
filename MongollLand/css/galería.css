@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+}
+body {
+    background-image: url(../img/minecraft4.png);
+    background-repeat: no-repeat;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.55);
+    transition: 0.85s;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.navbar:hover {
+    background-color: rgba(128, 128, 128, 0);
+}
+nav {
+    flex: 1;
+    text-align: right;
+}
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li {
+    font-size: 1.1em;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 15px;
+    background-color: #23A6D5;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: 0.35s;
+}
+nav ul li:hover {
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23d5aB);
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
+}
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    0%{
+        background-position: 0 50%;
+    }
+}
+nav ul li:hover {
+    background-color: rgb(116, 34, 211);
+    transform: translateY(-10px);
+} 
+a {
+    color: white;
+}
+.imgg {
+    margin-top: 975px;
+}
+.imggg {
+    margin-top: -5px;
+}
