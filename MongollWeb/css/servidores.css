@@ -1,0 +1,219 @@
+/*Web's style setup*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+}
+body {
+    min-height: 100vh;
+}
+a {
+    color: white;
+}
+/*color animation*/
+@keyframes color-fade {
+    0%{
+        background-position: 5% 50%;
+    }
+    50%{
+        background-position: 95% 50%;
+    }
+    100%{
+        background-position: 5% 50%;
+    }
+    50%{
+        background-position: 95% 50%;
+    }
+    0%{
+        background-position: 5% 50%;
+    }
+}
+
+/*First part*/
+.first-background {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(../img/minecraft1.png);
+}
+.first-overlay {
+    background: rgba(0, 0, 0, 0.2);
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+nav {
+    flex: 1;
+    text-align: right;
+}
+.navbar-logo {
+    transition: all 0.25s ease-in-out;
+}
+.navbar-logo:hover {
+    transform: translateY(-5px);
+    transition: 0.25s;
+}
+nav ul {
+    display: inline-block;
+}
+nav ul li {
+    font-size: 1.30em;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+    color: white;
+    border: 2px solid;
+    background-size: 400% 400%;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: transform 0.35s;
+}
+nav ul li:hover {
+    transform: translateY(-8.5px);
+    transition: 0.25s;
+} 
+.presentation-text {
+    position: relative;
+    margin-top: 75px;
+    padding: 250px 250px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+}
+.comunidad:hover {
+    background: linear-gradient(90deg, #23d5aB, #23A6D5, #E73C7E,#EE7752 );
+    background-size: 400% 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: color-fade 10s ease-in-out infinite;
+    transition: 0.3s;
+}
+
+/*Second part*/
+.second-background {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(../img/minecraft2.png);
+}
+.second-overlay {
+    background: rgba(0, 0, 0, 0.2);
+}
+.second-text {
+
+
+
+
+    padding: 25% 0;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+}
+.card {
+    position: relative;
+    height: 600px;
+    color: white;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 0.5s;
+}
+.card:hover {
+    transform: translateY(-15px);
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+}
+.card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+    filter: blur(15px);
+}
+.card:nth-child(2)::before,
+.card:nth-child(2)::after {
+    background: linear-gradient(45deg, #03a9f4, #ff0058);
+}
+.card:nth-child(3)::before,
+.card:nth-child(3)::after {
+    background: linear-gradient(45deg, #4dff03, #00d0ff);
+}
+.card-span {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+.content {
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+    text-align: center;
+}
+.card h2 {
+    margin-top: 5px;
+    padding: 35px;
+    font-size: 2.3em;
+}
+.card p {
+    font-size: 1.35em;
+    line-height: 37.5px;
+}
+
+/*Footer*/
+footer {
+    padding: 40px 0;
+    background-color: rgb(32, 34, 37);
+}
+footer .footer-logo {
+    padding-bottom: 25px;
+    text-align: center;
+}
+footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 25px;
+}
+footer ul li a {
+    color: rgb(194, 185, 185);
+}
+footer ul li a:hover {
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    transition: 0.25s;
+}
+footer .thanks {
+    margin-top: 20px;
+    text-align: center;
+    color: gray;
+}
+footer .timeframe {
+    font-weight: bolder;
+}
